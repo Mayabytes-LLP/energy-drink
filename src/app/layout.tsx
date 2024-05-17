@@ -50,12 +50,12 @@ const clashdisplay = localFont({
       style: "normal",
     },
     {
-      path: "../../public/assets/fonts/clashdisplay/Fonts/ClashDisplay-Variablewoff",
+      path: "../../public/assets/fonts/clashdisplay/Fonts/ClashDisplay-Variable.woff",
       weight: "100 900",
       style: "normal",
     },
     {
-      path: "../../public/assets/fonts/clashdisplay/Fonts/ClashDisplay-Variableoff2",
+      path: "../../public/assets/fonts/clashdisplay/Fonts/ClashDisplay-Variable.woff2",
       weight: "100 900",
       style: "normal",
     },
