@@ -1,6 +1,6 @@
 import React from "react"
 
-import Header from "../_components/header"
+import Header from "../../components/header"
 
 interface LandingLayoutProps {
   children: React.ReactNode
