@@ -67,6 +67,26 @@ const clashdisplay = localFont({
   variable: "--font-clashdisplay",
 })
 
+const striverx = localFont({
+  src: [
+    {
+      path: "../../public/assets/fonts/striverx/Striverx.otf",
+      weight: "100 900",
+      style: "normal",
+    },
+    {
+      path: "../../public/assets/fonts/striverx/Striverx.ttf",
+      weight: "100 900",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  weight: "100 900",
+  style: "normal",
+  preload: true,
+  variable: "--font-striverx",
+})
+
 export const metadata: Metadata = {
   title: "Energy Drinks",
   description: "Energy Drinks",
@@ -80,7 +100,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(satoshi.className, clashdisplay.variable, "min-h-screen")}
+        className={cn(
+          satoshi.className,
+          clashdisplay.variable,
+          striverx.variable,
+          "min-h-screen"
+        )}
       >
         <ThemeProvider
           attribute="class"

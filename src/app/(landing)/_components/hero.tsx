@@ -24,7 +24,10 @@ export default function Hero() {
             className={cn("relative z-10 mx-auto", "-mb-8")}
           />
           <h1
-            className={cn("font-heading font-semibold uppercase", "text-9xl")}
+            className={cn(
+              "font-heading font-semibold uppercase",
+              "text-[200px] leading-[100%]"
+            )}
           >
             natural power
           </h1>

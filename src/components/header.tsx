@@ -45,7 +45,7 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
           "left-0 right-0 top-8",
           "absolute mx-auto",
           "flex items-center justify-between",
-          "w-11/12",
+          "w-10/12",
           "rounded-full border border-white"
         )}
       >

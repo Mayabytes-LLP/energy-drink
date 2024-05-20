@@ -79,10 +79,17 @@ const config = {
         hero: "url(/assets/images/hero.jpg)",
         "arrow-small": "url(/assets/images/btn-arrow-small.png)",
         "arrow-large": "url(/assets/images/btn-arrow-large.png)",
+        "list-icon": "url(/assets/images/bubble.png)",
+        "blur-circle": "url(/assets/images/blur-circle.png)",
+        slider: "url(/assets/images/slider.jpg)",
       },
       fontFamily: {
         sans: ["var(--font-satoshi)", ...fontFamily.sans],
         heading: ["var(--font-clashdisplay)", ...fontFamily.serif],
+        serif: ["var(--font-striverx)", ...fontFamily.serif],
+      },
+      backgroundSize: {
+        "100%": "100% 100%",
       },
     },
   },
