@@ -162,7 +162,7 @@ const CarouselContent = React.forwardRef<
       <div
         ref={ref}
         className={cn(
-          "flex items-center justify-between",
+          "flex items-center justify-between gap-20",
           orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
           className
         )}

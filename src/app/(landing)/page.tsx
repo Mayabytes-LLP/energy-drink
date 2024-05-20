@@ -10,6 +10,7 @@ import DrinkQuality from "./_components/drink-quality"
 import EnergyDrinks from "./_components/energy-drink"
 import Hero from "./_components/hero"
 import ProductSlider from "./_components/product-slider"
+import TestimonialSlider from "./_components/testimonial-slider"
 
 export default function Home() {
   return (
@@ -177,6 +178,9 @@ export default function Home() {
               width={176}
             />
           </div>
+        </div>
+        <div className="w-full py-16">
+          <TestimonialSlider />
         </div>
       </div>
     </main>

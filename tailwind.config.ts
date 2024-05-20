@@ -81,6 +81,7 @@ const config = {
         "arrow-large": "url(/assets/images/btn-arrow-large.png)",
         "list-icon": "url(/assets/images/bubble.png)",
         "blur-circle": "url(/assets/images/blur-circle.png)",
+        "blur-oval": "url(/assets/images/blur-oval.png)",
         slider: "url(/assets/images/slider.jpg)",
       },
       fontFamily: {
