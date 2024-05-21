@@ -83,6 +83,7 @@ const config = {
         "blur-circle": "url(/assets/images/blur-circle.png)",
         "blur-oval": "url(/assets/images/blur-oval.png)",
         slider: "url(/assets/images/slider.jpg)",
+        "input-box": "url(/assets/images/input.png)",
       },
       fontFamily: {
         sans: ["var(--font-satoshi)", ...fontFamily.sans],

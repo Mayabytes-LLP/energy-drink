@@ -5,6 +5,7 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 
 import { Button } from "@/components/ui/button"
+import Footer from "@/components/footer"
 
 import DrinkQuality from "./_components/drink-quality"
 import EnergyDrinks from "./_components/energy-drink"
@@ -72,7 +73,7 @@ export default function Home() {
           <h2
             className={cn(
               "mx-auto mb-10 w-3/4",
-              "text-center font-bold uppercase leading-[100%]",
+              "text-center font-bold uppercase leading-[100%] tracking-tighter",
               "text-9xl",
               "relative z-10"
             )}
@@ -183,6 +184,7 @@ export default function Home() {
           <TestimonialSlider />
         </div>
       </div>
+      <Footer />
     </main>
   )
 }

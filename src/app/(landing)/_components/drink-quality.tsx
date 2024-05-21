@@ -79,7 +79,7 @@ export default function DrinkQuality() {
               <div
                 key={index}
                 className={cn(
-                  "bg-blur-circle h-72 w-72 bg-contain",
+                  "h-72 w-72 bg-blur-circle bg-contain",
                   "flex items-center justify-center",
                   "-mr-9",
                   "first:z-20",
@@ -101,7 +101,7 @@ export default function DrinkQuality() {
           </div>
         </div>
         <div className="w-1/2">
-          <h2 className="mb-10 text-9xl font-bold leading-[100%]">
+          <h2 className="mb-10 text-9xl font-bold uppercase leading-[100%] tracking-tighter">
             NATURAL TASTE AND POWER
           </h2>
           <ul className="ml-24 text-2xl font-medium">

@@ -55,7 +55,7 @@ export default function EnergyDrinks() {
       </div>
       <div className={cn("flex items-center justify-between gap-20")}>
         <div className="w-1/2">
-          <h2 className="mb-10 text-9xl font-bold leading-[100%]">
+          <h2 className="mb-10 text-9xl font-bold uppercase leading-[100%] tracking-tighter">
             SUPER NATURAL POWER
           </h2>
           <ul className="ml-24 text-2xl font-medium">
