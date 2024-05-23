@@ -45,14 +45,15 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
           "left-0 right-0 top-8",
           "absolute mx-auto",
           "flex items-center justify-between",
-          "w-10/12",
-          "rounded-full border border-white"
+          "w-11/12",
+          "rounded-full border border-white px-5"
         )}
       >
         <Sheet>
           <SheetTrigger className="" asChild>
-            <Button variant="secondary">
-              <Menu className="text-white" size={24} />
+            <Button variant="secondary" className="p-0">
+              <Menu className="mr-2 text-white" size={24} />
+              Menu
             </Button>
           </SheetTrigger>
           <SheetContent>
@@ -91,6 +92,40 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
           width={383}
           height={60}
         />
+        <div className="flex w-fit items-center gap-3">
+          <Link href="#">
+            <Image
+              src="/assets/images/icon-search.png"
+              height={28}
+              width={28}
+              alt="IconSearch"
+            />
+          </Link>
+          <Link href="#">
+            <Image
+              src="/assets/images/icon-user.png"
+              height={28}
+              width={28}
+              alt="IconUser"
+            />
+          </Link>
+          <Link href="#">
+            <Image
+              src="/assets/images/icon-favourite.png"
+              height={28}
+              width={28}
+              alt="IconFavourite"
+            />
+          </Link>
+          <Link href="#">
+            <Image
+              src="/assets/images/icon-cart.png"
+              height={28}
+              width={28}
+              alt="IconCart"
+            />
+          </Link>
+        </div>
       </motion.header>
     )
   }

@@ -19,7 +19,7 @@ export default function Home() {
       <Hero />
       <EnergyDrinks />
       <DrinkQuality />
-      <div className={cn("w-full", "py-16", "relative")}>
+      <div className={cn("w-full", "relative")}>
         <div
           className={cn(
             "rounded-full border border-white",
@@ -29,18 +29,26 @@ export default function Home() {
             "mx-auto w-11/12"
           )}
         >
-          <div className={cn("flex items-center justify-between", "w-3/12")}>
+          <div
+            className={cn(
+              "flex items-center justify-between",
+              "w-3/12",
+              "hidden md:flex"
+            )}
+          >
             <Image
               src="/assets/images/dashed.png"
               alt="pattern1"
               height={23}
               width={176}
+              className="w-20 lg:w-44"
             />
             <Image
-              src="/assets/images/smiley.png"
+              src="/assets/images/can.png"
               alt="pattern2"
               height={57}
               width={34}
+              className="w-5 lg:w-9"
             />
           </div>
           <div
@@ -50,32 +58,43 @@ export default function Home() {
               "px-12 py-2"
             )}
           >
-            <h5 className="font-serif text-4xl capitalize">
+            <h5
+              className={cn("font-serif capitalize", "text-2xl 2xl:text-4xl")}
+            >
               want to try boost drink
             </h5>
           </div>
-          <div className={cn("flex items-center justify-between", "w-3/12")}>
+          <div
+            className={cn(
+              "flex items-center justify-between",
+              "w-3/12",
+              "hidden md:flex"
+            )}
+          >
             <Image
-              src="/assets/images/smiley.png"
+              src="/assets/images/can.png"
               alt="pattern2"
               height={57}
               width={34}
+              className="w-5 lg:w-9"
             />
             <Image
               src="/assets/images/dashed.png"
               alt="pattern1"
               height={23}
               width={176}
+              className="w-20 lg:w-44"
             />
           </div>
         </div>
         <div className={cn("container")}>
           <h2
             className={cn(
-              "mx-auto mb-10 w-3/4",
+              "mx-auto w-3/4",
               "text-center font-bold uppercase leading-[100%] tracking-tighter",
-              "text-9xl",
-              "relative z-10"
+              "text-5xl lg:text-7xl 2xl:text-9xl",
+              "relative z-10",
+              "mb-0 lg:mb-10"
             )}
           >
             order your favorite drinks
@@ -83,9 +102,9 @@ export default function Home() {
         </div>
         <div
           className={cn(
-            "-mt-40",
+            "-mt-16 lg:-mt-40",
             "bg-slider bg-cover bg-bottom bg-no-repeat",
-            "pt-60"
+            "pt-32 md:pt-60"
           )}
         >
           <ProductSlider />
@@ -94,27 +113,33 @@ export default function Home() {
             height={247}
             width={533}
             alt="base"
-            className="mx-auto -mt-20"
+            className={cn("mx-auto -mt-6 md:-mt-20", "w-40 md:w-96")}
           />
         </div>
         <div
           className={cn(
-            "mx-auto w-1/4",
+            "mx-auto w-1/2 xl:w-1/4",
             "text-center",
-            "-mt-28",
+            "-mt-8 md:-mt-20 xl:-mt-28",
             "relative z-10"
           )}
         >
           <h4
             className={cn(
               "font-heading font-semibold uppercase",
-              "text-4xl",
-              "mb-5"
+              "text-xl md:text-3xl lg:text-4xl",
+              "mb-0 lg:mb-5"
             )}
           >
             energy drink
           </h4>
-          <p className="mb-10 text-2xl font-medium">
+          <p
+            className={cn(
+              "font-medium",
+              "text-md md:text-lg xl:text-2xl",
+              "mb-5 lg:mb-10"
+            )}
+          >
             Lorem ipsum dolor sit amet consectetur. Sodales at felis pulvinar
             aenean.
           </p>
@@ -127,7 +152,10 @@ export default function Home() {
           alt="blur"
           height={278}
           width={1920}
-          className="absolute bottom-10 left-0 right-0 w-full"
+          className={cn(
+            "absolute left-0 right-0 w-full",
+            "bottom-10 md:bottom-0 lg:bottom-10"
+          )}
         />
       </div>
       <div className="relative w-full py-16">
@@ -140,18 +168,26 @@ export default function Home() {
             "mx-auto w-11/12"
           )}
         >
-          <div className={cn("flex items-center justify-between", "w-3/12")}>
+          <div
+            className={cn(
+              "flex items-center justify-between",
+              "w-3/12",
+              "hidden md:flex"
+            )}
+          >
             <Image
               src="/assets/images/dashed.png"
               alt="pattern1"
               height={23}
               width={176}
+              className="w-20 lg:w-44"
             />
             <Image
               src="/assets/images/smiley.png"
               alt="pattern2"
               height={43}
               width={87}
+              className="w-10 lg:w-20"
             />
           </div>
           <div
@@ -161,26 +197,36 @@ export default function Home() {
               "px-12 py-2"
             )}
           >
-            <h5 className="font-serif text-4xl capitalize">
+            <h5
+              className={cn("font-serif capitalize", "text-2xl 2xl:text-4xl")}
+            >
               customer liked our drinks
             </h5>
           </div>
-          <div className={cn("flex items-center justify-between", "w-3/12")}>
+          <div
+            className={cn(
+              "flex items-center justify-between",
+              "w-3/12",
+              "hidden md:flex"
+            )}
+          >
             <Image
               src="/assets/images/smiley.png"
               alt="pattern2"
               height={43}
               width={87}
+              className="w-10 lg:w-20"
             />
             <Image
               src="/assets/images/dashed.png"
               alt="pattern1"
               height={23}
               width={176}
+              className="w-20 lg:w-44"
             />
           </div>
         </div>
-        <div className="w-full py-16">
+        <div className={cn("w-full px-5 lg:px-0", "py-0 md:py-16")}>
           <TestimonialSlider />
         </div>
       </div>

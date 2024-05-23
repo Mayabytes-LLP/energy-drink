@@ -55,12 +55,12 @@ export default function TestimonialSlider() {
       <CarouselContent>
         {items.map((item, i) => {
           return (
-            <CarouselItem key={i} className="basis-1/2">
+            <CarouselItem key={i} className="basis-full lg:basis-1/2">
               <div
                 className={cn(
                   "bg-blur-oval bg-contain bg-no-repeat",
                   "flex items-center",
-                  "w-full  overflow-hidden"
+                  "w-full overflow-hidden"
                 )}
               >
                 <div className="w-2/5">
@@ -73,11 +73,27 @@ export default function TestimonialSlider() {
                   />
                 </div>
                 <div className={cn("w-3/5")}>
-                  <div className="w-">
-                    <p className="mb-5 w-96 text-2xl font-medium">
+                  <div
+                    className={cn(
+                      "w-72 md:w-96 lg:w-64 xl:w-80 2xl:w-96",
+                      "ml-3"
+                    )}
+                  >
+                    <p
+                      className={cn(
+                        "font-medium",
+                        "xl:text-md text-md lg:text-sm 2xl:text-xl",
+                        "mb-2 xl:mb-5"
+                      )}
+                    >
                       {item.review}
                     </p>
-                    <h6 className="text-3xl font-semibold">
+                    <h6
+                      className={cn(
+                        "font-semibold",
+                        "text-xl xl:text-2xl 2xl:text-3xl"
+                      )}
+                    >
                       {item.designation}
                     </h6>
                   </div>

@@ -4,27 +4,35 @@ import { cn } from "@/lib/utils"
 
 export default function EnergyDrinks() {
   return (
-    <section className={cn("w-10/12", "py-12")}>
+    <section className={cn("w-11/12", "py-12")}>
       <div
         className={cn(
           "rounded-full border border-white",
           "flex w-full items-center",
           "px-10",
-          "mb-12"
+          "mb-20 lg:mb-12"
         )}
       >
-        <div className={cn("flex items-center justify-between", "w-3/12")}>
+        <div
+          className={cn(
+            "flex items-center justify-between",
+            "w-3/12",
+            "hidden md:flex"
+          )}
+        >
           <Image
             src="/assets/images/pattern-1.png"
             alt="pattern1"
             height={19}
             width={154}
+            className="w-20 lg:w-36"
           />
           <Image
             src="/assets/images/pattern-2.png"
             alt="pattern2"
             height={51}
             width={50}
+            className="w-8 lg:w-14"
           />
         </div>
         <div
@@ -34,36 +42,56 @@ export default function EnergyDrinks() {
             "px-12 py-2"
           )}
         >
-          <h5 className="font-serif text-4xl capitalize">
+          <h5 className={cn("font-serif capitalize", "text-2xl 2xl:text-4xl")}>
             The Different Energy Drink
           </h5>
         </div>
-        <div className={cn("flex items-center justify-between", "w-3/12")}>
+        <div
+          className={cn(
+            "flex items-center justify-between",
+            "w-3/12",
+            "hidden md:flex"
+          )}
+        >
           <Image
             src="/assets/images/pattern-2.png"
             alt="pattern2"
             height={51}
             width={50}
+            className="w-8 lg:w-14"
           />
           <Image
             src="/assets/images/pattern-1.png"
             alt="pattern1"
             height={19}
             width={154}
+            className="w-20 lg:w-36"
           />
         </div>
       </div>
       <div className={cn("flex items-center justify-between gap-20")}>
         <div className="w-1/2">
-          <h2 className="mb-10 text-9xl font-bold uppercase leading-[100%] tracking-tighter">
+          <h2
+            className={cn(
+              "mb-10 font-bold uppercase leading-[100%] tracking-tighter",
+              "text-3xl md:text-4xl lg:text-7xl 2xl:text-9xl"
+            )}
+          >
             SUPER NATURAL POWER
           </h2>
-          <ul className="ml-24 text-2xl font-medium">
+          <ul
+            className={cn(
+              "ml-0 md:ml-5 lg:ml-16 xl:ml-24",
+              "lg:text-md text-sm xl:text-xl 2xl:text-2xl",
+              "font-medium"
+            )}
+          >
             <li
               className={cn(
-                "mb-10  pl-24",
+                "mb-5 md:mb-10",
                 "relative",
-                "before:absolute before:left-0 before:top-5 before:h-2 before:w-2 before:bg-list-icon before:bg-contain before:bg-no-repeat"
+                "before:absolute before:left-0 before:top-5 before:h-2 before:w-2 before:bg-list-icon before:bg-contain before:bg-no-repeat",
+                "2xl:pl-24"
               )}
             >
               Boost Beverages AG in Switzerland created a revolutionary energy
@@ -72,9 +100,10 @@ export default function EnergyDrinks() {
             </li>
             <li
               className={cn(
-                "mb-10  pl-24",
+                "mb-10",
                 "relative",
-                "before:absolute before:left-0 before:top-5 before:h-2 before:w-2 before:bg-list-icon before:bg-contain before:bg-no-repeat"
+                "before:absolute before:left-0 before:top-5 before:h-2 before:w-2 before:bg-list-icon before:bg-contain before:bg-no-repeat",
+                "2xl:pl-24"
               )}
             >
               As the owner of the Boost brand, we offer a high-quality energy
@@ -97,7 +126,10 @@ export default function EnergyDrinks() {
             alt="energy"
             height={878}
             width={558}
-            className="absolute bottom-0 left-0 right-0 top-0 mx-auto"
+            className={cn(
+              "absolute bottom-0 left-0 right-0 mx-auto",
+              "-top-20 2xl:top-0"
+            )}
           />
         </div>
       </div>
