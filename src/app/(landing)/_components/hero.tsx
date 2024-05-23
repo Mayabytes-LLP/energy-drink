@@ -24,7 +24,7 @@ export default function Hero() {
             height={172}
             className={cn(
               "relative z-10 mx-auto",
-              "-mb-4 md:-mb-8",
+              "-mb-4 md:-mb-12",
               "w-24 sm:w-36 md:w-52 lg:w-64"
             )}
           />

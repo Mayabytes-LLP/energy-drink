@@ -4,13 +4,13 @@ import { cn } from "@/lib/utils"
 
 export default function EnergyDrinks() {
   return (
-    <section className={cn("w-11/12", "py-12")}>
+    <section className={cn("w-11/12", "pt-10 sm:pt-20")}>
       <div
         className={cn(
           "rounded-full border border-transparent sm:border-white",
           "flex w-full items-center",
           "px-10",
-          "mb-10 sm:mb-20 lg:mb-12"
+          "mb-10 sm:mb-20"
         )}
       >
         <div
@@ -45,7 +45,7 @@ export default function EnergyDrinks() {
           <h5
             className={cn(
               "font-serif capitalize",
-              "text-md sm:text-2xl 2xl:text-4xl"
+              "text-lg sm:text-2xl 2xl:text-4xl"
             )}
           >
             The Different Energy Drink
@@ -111,7 +111,6 @@ export default function EnergyDrinks() {
             </li>
             <li
               className={cn(
-                "mb-10",
                 "relative",
                 "before:absolute before:left-0 before:top-5 before:h-2 before:w-2 before:bg-list-icon before:bg-contain before:bg-no-repeat",
                 "2xl:pl-24"
@@ -126,21 +125,11 @@ export default function EnergyDrinks() {
         </div>
         <div className="relative w-full sm:w-1/2">
           <Image
-            src="/assets/images/sec-2.png"
+            src="/assets/images/drink.png"
             alt="energy"
             height={988}
             width={839}
             className="mx-auto"
-          />
-          <Image
-            src="/assets/images/drink.png"
-            alt="energy"
-            height={878}
-            width={558}
-            className={cn(
-              "absolute bottom-0 left-0 right-0 mx-auto",
-              "-top-20 2xl:top-0"
-            )}
           />
         </div>
       </div>

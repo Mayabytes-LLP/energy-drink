@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils"
 
 export default function Footer() {
   return (
-    <footer className="w-full px-5 py-10">
-      <div className="mx-auto mb-10 w-10/12">
+    <footer className="w-full px-5 pb-5 pt-20 sm:pt-40">
+      <div className="mx-auto mb-10 w-full lg:w-10/12">
         <div
           className={cn(
             "flex items-center justify-center",
@@ -68,7 +68,7 @@ export default function Footer() {
       </div>
       <div
         className={cn(
-          "mx-auto w-10/12 rounded-xl border border-white lg:rounded-full",
+          "mx-auto w-full rounded-xl border border-white lg:w-10/12 lg:rounded-full",
           "p-6 sm:p-12 2xl:p-20"
         )}
       >

@@ -19,13 +19,13 @@ export default function Home() {
       <Hero />
       <EnergyDrinks />
       <DrinkQuality />
-      <div className={cn("w-full", "relative")}>
+      <div className={cn("w-full", "relative", "pt-10 sm:pt-20")}>
         <div
           className={cn(
             "rounded-full border border-transparent sm:border-white",
             "flex w-full items-center",
             "px-10",
-            "mb-10 sm:mb-12",
+            "mb-10 sm:mb-20",
             "mx-auto w-11/12"
           )}
         >
@@ -61,7 +61,7 @@ export default function Home() {
             <h5
               className={cn(
                 "font-serif capitalize",
-                "text-md sm:text-2xl 2xl:text-4xl"
+                "text-lg sm:text-2xl 2xl:text-4xl"
               )}
             >
               want to try boost drink
@@ -105,9 +105,9 @@ export default function Home() {
         </div>
         <div
           className={cn(
-            "-mt-16 lg:-mt-40",
+            "-mt-10 lg:-mt-40",
             "bg-slider bg-cover bg-bottom bg-no-repeat",
-            "pt-32 md:pt-60"
+            "pt-16 sm:pt-32 md:pt-60"
           )}
         >
           <ProductSlider />
@@ -116,14 +116,14 @@ export default function Home() {
             height={247}
             width={533}
             alt="base"
-            className={cn("mx-auto -mt-6 md:-mt-20", "w-40 md:w-96")}
+            className={cn("mx-auto -mt-6 md:-mt-16 2xl:-mt-16", "w-40 md:w-96")}
           />
         </div>
         <div
           className={cn(
             "mx-auto w-3/4 sm:w-1/2 xl:w-1/4",
             "text-center",
-            "-mt-8 md:-mt-20 xl:-mt-28",
+            "-mt-8 md:-mt-20 xl:-mt-20",
             "relative z-10"
           )}
         >
@@ -157,17 +157,17 @@ export default function Home() {
           width={1920}
           className={cn(
             "absolute left-0 right-0 w-full",
-            "bottom-10 md:bottom-0 lg:bottom-10"
+            "bottom-20 md:bottom-0 xl:bottom-10 2xl:-bottom-10"
           )}
         />
       </div>
-      <div className="relative w-full py-16">
+      <div className={cn("relative w-full", "pt-10 sm:pt-20")}>
         <div
           className={cn(
             "rounded-full border border-transparent sm:border-white",
             "flex w-full items-center",
             "px-10",
-            "mb-12",
+            "mb-10 sm:mb-20",
             "mx-auto w-11/12"
           )}
         >
@@ -203,7 +203,7 @@ export default function Home() {
             <h5
               className={cn(
                 "font-serif capitalize",
-                "text-md sm:text-2xl 2xl:text-4xl"
+                "text-lg sm:text-2xl 2xl:text-4xl"
               )}
             >
               customer liked our drinks
@@ -232,10 +232,11 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={cn("w-full px-5 lg:px-0", "py-0 md:py-16")}>
+        <div className={cn("w-full px-5 lg:px-0")}>
           <TestimonialSlider />
         </div>
       </div>
+
       <Footer />
     </main>
   )

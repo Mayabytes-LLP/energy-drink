@@ -16,13 +16,13 @@ const qualities = [
 
 export default function DrinkQuality() {
   return (
-    <section className={cn("w-11/12", "pb-12 pt-0 md:py-12")}>
+    <section className={cn("w-11/12", "pt-10 sm:pt-20")}>
       <div
         className={cn(
           "rounded-full border border-transparent sm:border-white",
           "flex w-full items-center",
           "px-10",
-          "mb-10 sm:mb-12"
+          "mb-10 sm:mb-20"
         )}
       >
         <div
@@ -57,7 +57,7 @@ export default function DrinkQuality() {
           <h5
             className={cn(
               "font-serif capitalize",
-              "text-md sm:text-2xl 2xl:text-4xl"
+              "text-lg sm:text-2xl 2xl:text-4xl"
             )}
           >
             boost drink qualities
@@ -88,7 +88,7 @@ export default function DrinkQuality() {
       </div>
       <div
         className={cn(
-          "flex items-center justify-between gap-10 md:gap-20",
+          "flex items-center justify-between ",
           "sm:flex-no-wrap flex-wrap"
         )}
       >
@@ -96,42 +96,10 @@ export default function DrinkQuality() {
           <Image
             src="/assets/images/quality.png"
             alt="energy"
-            height={901}
-            width={715}
+            height={1000}
+            width={854}
             className="mx-auto"
           />
-          <div
-            className={cn(
-              "flex items-center justify-center",
-              "-mt-32 lg:-mt-60"
-            )}
-          >
-            {qualities.map((data, index) => (
-              <div
-                key={index}
-                className={cn(
-                  "bg-blur-circle bg-contain bg-no-repeat",
-                  "flex items-center justify-center",
-                  "-mr-2 lg:-mr-7 2xl:-mr-9",
-                  "first:z-20",
-                  "z-10",
-                  "last:z-0",
-                  "h-32 w-32 lg:h-60 lg:w-60 2xl:h-72 2xl:w-72"
-                )}
-              >
-                <p
-                  className={cn(
-                    "font-medium",
-                    "text-center",
-                    "mx-auto w-4/5",
-                    "text-sm lg:text-lg 2xl:text-2xl"
-                  )}
-                >
-                  {data.item}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
         <div className="w-full sm:w-1/2">
           <h2
@@ -151,7 +119,6 @@ export default function DrinkQuality() {
           >
             <li
               className={cn(
-                "mb-10",
                 "relative",
                 "before:absolute before:left-0 before:top-5 before:h-2 before:w-2 before:bg-list-icon before:bg-contain before:bg-no-repeat",
                 "2xl:pl-24"

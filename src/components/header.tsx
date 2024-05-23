@@ -46,7 +46,8 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
           "absolute mx-auto",
           "flex items-center justify-between",
           "w-11/12",
-          "rounded-full border border-white px-5"
+          "rounded-full border border-white px-5",
+          "flex-row-reverse sm:flex-row"
         )}
       >
         <Sheet>
@@ -64,6 +65,7 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
                   src="/assets/images/logo.png"
                   width={383}
                   height={60}
+                  className="w-60 lg:w-96"
                 />
               </Link>
               <ul className={cn("first:*pt-0 last:*pb-0 grid *:py-2")}>
@@ -91,8 +93,9 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
           src="/assets/images/logo.png"
           width={383}
           height={60}
+          className="w-40 sm:w-60 lg:w-96"
         />
-        <div className="flex w-fit items-center gap-3">
+        <div className={cn("w-fit items-center gap-3", "hidden sm:flex")}>
           <Link href="#">
             <Image
               src="/assets/images/icon-search.png"

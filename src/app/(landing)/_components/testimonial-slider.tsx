@@ -59,8 +59,9 @@ export default function TestimonialSlider() {
               <div
                 className={cn(
                   "bg-contain bg-no-repeat sm:bg-blur-oval",
-                  "sm:flex-no-wrap flex flex-wrap items-center",
-                  "w-full overflow-hidden"
+                  "flex items-center",
+                  "w-full overflow-hidden",
+                  "flex-wrap"
                 )}
               >
                 <div className={cn("w-full sm:w-2/5", "mb-5 sm:mb-0")}>
@@ -72,7 +73,7 @@ export default function TestimonialSlider() {
                     className=""
                   />
                 </div>
-                <div className={cn("text-cenetr w-full")}>
+                <div className={cn("text-cenetr")}>
                   <div
                     className={cn(
                       "w-full sm:w-72 md:w-96 lg:w-64 xl:w-80 2xl:w-96",
