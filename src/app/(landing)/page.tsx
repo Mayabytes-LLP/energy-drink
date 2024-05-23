@@ -22,10 +22,10 @@ export default function Home() {
       <div className={cn("w-full", "relative")}>
         <div
           className={cn(
-            "rounded-full border border-white",
+            "rounded-full border border-transparent sm:border-white",
             "flex w-full items-center",
             "px-10",
-            "mb-12",
+            "mb-10 sm:mb-12",
             "mx-auto w-11/12"
           )}
         >
@@ -59,7 +59,10 @@ export default function Home() {
             )}
           >
             <h5
-              className={cn("font-serif capitalize", "text-2xl 2xl:text-4xl")}
+              className={cn(
+                "font-serif capitalize",
+                "text-md sm:text-2xl 2xl:text-4xl"
+              )}
             >
               want to try boost drink
             </h5>
@@ -90,9 +93,9 @@ export default function Home() {
         <div className={cn("container")}>
           <h2
             className={cn(
-              "mx-auto w-3/4",
+              "mx-auto w-full sm:w-3/4",
               "text-center font-bold uppercase leading-[100%] tracking-tighter",
-              "text-5xl lg:text-7xl 2xl:text-9xl",
+              "text-3xl md:text-4xl lg:text-7xl 2xl:text-9xl",
               "relative z-10",
               "mb-0 lg:mb-10"
             )}
@@ -118,7 +121,7 @@ export default function Home() {
         </div>
         <div
           className={cn(
-            "mx-auto w-1/2 xl:w-1/4",
+            "mx-auto w-3/4 sm:w-1/2 xl:w-1/4",
             "text-center",
             "-mt-8 md:-mt-20 xl:-mt-28",
             "relative z-10"
@@ -161,7 +164,7 @@ export default function Home() {
       <div className="relative w-full py-16">
         <div
           className={cn(
-            "rounded-full border border-white",
+            "rounded-full border border-transparent sm:border-white",
             "flex w-full items-center",
             "px-10",
             "mb-12",
@@ -198,7 +201,10 @@ export default function Home() {
             )}
           >
             <h5
-              className={cn("font-serif capitalize", "text-2xl 2xl:text-4xl")}
+              className={cn(
+                "font-serif capitalize",
+                "text-md sm:text-2xl 2xl:text-4xl"
+              )}
             >
               customer liked our drinks
             </h5>

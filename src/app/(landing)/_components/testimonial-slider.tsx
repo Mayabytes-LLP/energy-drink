@@ -58,12 +58,12 @@ export default function TestimonialSlider() {
             <CarouselItem key={i} className="basis-full lg:basis-1/2">
               <div
                 className={cn(
-                  "bg-blur-oval bg-contain bg-no-repeat",
-                  "flex items-center",
+                  "bg-contain bg-no-repeat sm:bg-blur-oval",
+                  "sm:flex-no-wrap flex flex-wrap items-center",
                   "w-full overflow-hidden"
                 )}
               >
-                <div className="w-2/5">
+                <div className={cn("w-full sm:w-2/5", "mb-5 sm:mb-0")}>
                   <Image
                     src={item.image}
                     alt="sliderImage"
@@ -72,11 +72,12 @@ export default function TestimonialSlider() {
                     className=""
                   />
                 </div>
-                <div className={cn("w-3/5")}>
+                <div className={cn("text-cenetr w-full")}>
                   <div
                     className={cn(
-                      "w-72 md:w-96 lg:w-64 xl:w-80 2xl:w-96",
-                      "ml-3"
+                      "w-full sm:w-72 md:w-96 lg:w-64 xl:w-80 2xl:w-96",
+                      "ml-0 sm:ml-3",
+                      "text-center sm:text-left"
                     )}
                   >
                     <p

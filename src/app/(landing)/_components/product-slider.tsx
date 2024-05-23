@@ -43,13 +43,13 @@ export default function ProductSlider() {
       <CarouselContent>
         {items.map((item, i) => {
           return (
-            <CarouselItem key={i} className="basis-1/5">
+            <CarouselItem key={i} className="basis-full sm:basis-1/5">
               <Image
                 src={item.image}
                 alt="sliderImage"
                 height={506}
                 width={282}
-                className="mx-auto drop-shadow-sm"
+                className={cn("mx-auto drop-shadow-sm", "w-40 sm:w-72")}
               />
             </CarouselItem>
           )

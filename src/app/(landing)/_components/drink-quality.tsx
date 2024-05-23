@@ -19,10 +19,10 @@ export default function DrinkQuality() {
     <section className={cn("w-11/12", "pb-12 pt-0 md:py-12")}>
       <div
         className={cn(
-          "rounded-full border border-white",
+          "rounded-full border border-transparent sm:border-white",
           "flex w-full items-center",
           "px-10",
-          "mb-12"
+          "mb-10 sm:mb-12"
         )}
       >
         <div
@@ -54,7 +54,12 @@ export default function DrinkQuality() {
             "px-12 py-2"
           )}
         >
-          <h5 className={cn("font-serif capitalize", "text-2xl 2xl:text-4xl")}>
+          <h5
+            className={cn(
+              "font-serif capitalize",
+              "text-md sm:text-2xl 2xl:text-4xl"
+            )}
+          >
             boost drink qualities
           </h5>
         </div>
@@ -81,8 +86,13 @@ export default function DrinkQuality() {
           />
         </div>
       </div>
-      <div className={cn("flex items-center justify-between gap-10 md:gap-20")}>
-        <div className="relative w-1/2">
+      <div
+        className={cn(
+          "flex items-center justify-between gap-10 md:gap-20",
+          "sm:flex-no-wrap flex-wrap"
+        )}
+      >
+        <div className="relative w-full sm:w-1/2">
           <Image
             src="/assets/images/quality.png"
             alt="energy"
@@ -123,10 +133,10 @@ export default function DrinkQuality() {
             ))}
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full sm:w-1/2">
           <h2
             className={cn(
-              "mb-10 font-bold uppercase leading-[100%] tracking-tighter",
+              "mb-5 font-bold uppercase leading-[100%] tracking-tighter sm:mb-10",
               "text-3xl md:text-4xl lg:text-7xl 2xl:text-9xl"
             )}
           >

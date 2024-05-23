@@ -7,21 +7,26 @@ export default function Footer() {
   return (
     <footer className="w-full px-5 py-10">
       <div className="mx-auto mb-10 w-10/12">
-        <div className="flex items-center justify-center">
-          <div className="w-3/5">
+        <div
+          className={cn(
+            "flex items-center justify-center",
+            "sm:flex-no-wrap flex-wrap"
+          )}
+        >
+          <div className="w-full sm:w-3/5">
             <h2
               className={cn(
-                "mb-10 font-bold uppercase leading-[100%] tracking-tighter",
+                "mb-5 font-bold uppercase leading-[100%] tracking-tighter sm:mb-10",
                 "text-4xl lg:text-7xl 2xl:text-9xl"
               )}
             >
               get our newsletter
             </h2>
           </div>
-          <div className="w-2/5">
+          <div className="w-full sm:w-2/5">
             <h4
               className={cn(
-                "mb-10 font-bold uppercase",
+                "mb-5 font-bold uppercase sm:mb-10",
                 " w-full 2xl:w-2/3",
                 "text-2xl lg:text-4xl"
               )}
@@ -29,7 +34,7 @@ export default function Footer() {
               <span className="text-fuchsia-500">15% off</span> on any Boost
               drink
             </h4>
-            <div className="relative w-96">
+            <div className="relative w-96 sm:block">
               <div
                 className={cn(
                   "relative overflow-hidden rounded-full",
@@ -64,7 +69,7 @@ export default function Footer() {
       <div
         className={cn(
           "mx-auto w-10/12 rounded-xl border border-white lg:rounded-full",
-          "p-12 2xl:p-20"
+          "p-6 sm:p-12 2xl:p-20"
         )}
       >
         <div className="flex flex-wrap items-center">
@@ -72,7 +77,8 @@ export default function Footer() {
             className={cn(
               "relative",
               "w-fit lg:w-2/6",
-              "mx-auto mb-20 lg:mb-0"
+              "mx-auto mb-20 lg:mb-0",
+              "mt-8 sm:mt-0"
             )}
           >
             <div className="mx-auto flex h-44 w-44 items-center justify-center rounded-full border border-white md:m-0">
@@ -94,7 +100,7 @@ export default function Footer() {
           </div>
           <div className="w-full lg:w-3/5">
             <div className="flex flex-wrap justify-between">
-              <div className="mb-10 w-1/2 md:mb-0 md:w-fit">
+              <div className="mb-10 w-full sm:w-1/2 md:mb-0 md:w-fit">
                 <h4
                   className={cn(
                     "mb-5 font-heading font-semibold uppercase",
@@ -171,7 +177,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="mb-10 w-1/2 md:mb-0 md:w-fit">
+              <div className="mb-10 w-full sm:w-1/2 md:mb-0 md:w-fit">
                 <h4
                   className={cn(
                     "mb-5 font-heading font-semibold uppercase",
@@ -248,7 +254,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="w-1/2 md:w-fit">
+              <div className="mb-10 w-full sm:mb-0 sm:w-1/2 md:w-fit">
                 <h4
                   className={cn(
                     "mb-5 font-heading font-semibold uppercase",
@@ -312,7 +318,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="w-1/2 md:w-fit">
+              <div className="w-full sm:w-1/2 md:w-fit">
                 <h4
                   className={cn(
                     "mb-5 font-heading font-semibold uppercase",
@@ -393,7 +399,7 @@ export default function Footer() {
               © 2024 boost drink Inc. All rights reserved.
             </p>
           </div>
-          <div className="w-1/2 text-center md:w-1/3">
+          <div className="w-full text-center sm:w-1/2 md:w-1/3">
             <Link
               href="#"
               className={cn(
@@ -415,13 +421,13 @@ export default function Footer() {
               Terms & Conditions
             </Link>
           </div>
-          <div className="w-1/2 md:w-1/3">
+          <div className="w-full sm:w-1/2 md:w-1/3">
             <Link
               href="#"
               className={cn(
-                "ml-auto",
+                "mx-auto mt-8 sm:ml-auto sm:mt-0",
                 "font-medium text-white hover:text-fuchsia-500",
-                "flex w-fit items-center justify-end",
+                "flex w-fit items-center justify-center sm:justify-end",
                 "xl:text-md text-sm 2xl:text-xl"
               )}
             >

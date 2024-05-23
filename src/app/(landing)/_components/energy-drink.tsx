@@ -7,10 +7,10 @@ export default function EnergyDrinks() {
     <section className={cn("w-11/12", "py-12")}>
       <div
         className={cn(
-          "rounded-full border border-white",
+          "rounded-full border border-transparent sm:border-white",
           "flex w-full items-center",
           "px-10",
-          "mb-20 lg:mb-12"
+          "mb-10 sm:mb-20 lg:mb-12"
         )}
       >
         <div
@@ -42,7 +42,12 @@ export default function EnergyDrinks() {
             "px-12 py-2"
           )}
         >
-          <h5 className={cn("font-serif capitalize", "text-2xl 2xl:text-4xl")}>
+          <h5
+            className={cn(
+              "font-serif capitalize",
+              "text-md sm:text-2xl 2xl:text-4xl"
+            )}
+          >
             The Different Energy Drink
           </h5>
         </div>
@@ -69,12 +74,18 @@ export default function EnergyDrinks() {
           />
         </div>
       </div>
-      <div className={cn("flex items-center justify-between gap-20")}>
-        <div className="w-1/2">
+      <div
+        className={cn(
+          "flex items-center justify-between gap-20",
+          "flex-wrap sm:flex-nowrap"
+        )}
+      >
+        <div className="w-full sm:w-1/2">
           <h2
             className={cn(
-              "mb-10 font-bold uppercase leading-[100%] tracking-tighter",
-              "text-3xl md:text-4xl lg:text-7xl 2xl:text-9xl"
+              "font-bold uppercase leading-[100%] tracking-tighter",
+              "text-3xl md:text-4xl lg:text-7xl 2xl:text-9xl",
+              "mb-5 sm:mb-10"
             )}
           >
             SUPER NATURAL POWER
@@ -113,7 +124,7 @@ export default function EnergyDrinks() {
             </li>
           </ul>
         </div>
-        <div className="relative w-1/2">
+        <div className="relative w-full sm:w-1/2">
           <Image
             src="/assets/images/sec-2.png"
             alt="energy"

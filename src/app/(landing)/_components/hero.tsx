@@ -25,21 +25,27 @@ export default function Hero() {
             className={cn(
               "relative z-10 mx-auto",
               "-mb-4 md:-mb-8",
-              "w-36 md:w-52 lg:w-64"
+              "w-24 sm:w-36 md:w-52 lg:w-64"
             )}
           />
           <h1
             className={cn(
               "font-heading font-semibold uppercase 2xl:leading-[100%]",
-              "text-5xl md:text-8xl lg:text-9xl 2xl:text-[200px]",
-              "mx-auto w-4/5 md:w-full"
+              "text-4xl sm:text-5xl md:text-8xl lg:text-9xl 2xl:text-[200px]",
+              "mx-auto w-4/5 md:w-full",
+              "mb-5 sm:mb-0"
             )}
           >
             natural power
           </h1>
         </div>
-        <div className={cn("flex items-center", "-mt-24")}>
-          <div className="mt-32 w-2/6">
+        <div
+          className={cn(
+            "flex flex-wrap items-center sm:flex-nowrap",
+            "mt-0 sm:-mt-24"
+          )}
+        >
+          <div className="w-full sm:mt-32 sm:w-2/6">
             <p
               className={cn(
                 "font-medium",
@@ -55,7 +61,7 @@ export default function Hero() {
               <Link href="#founder">try it now</Link>
             </Button>
           </div>
-          <div className="w-2/6">
+          <div className="w-full sm:w-2/6">
             <Image
               src="/assets/images/drink-banner.png"
               alt="boost"
@@ -63,8 +69,10 @@ export default function Hero() {
               height={895}
             />
           </div>
-          <div className="mt-32 w-2/6">
-            <div className={cn("flex justify-end gap-5", "text-center")}>
+          <div className="w-full sm:mt-32 sm:w-2/6">
+            <div
+              className={cn("flex justify-end gap-2 sm:gap-5", "text-center")}
+            >
               <div>
                 <Image
                   src="/assets/images/stores.png"
