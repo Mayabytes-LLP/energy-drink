@@ -1,4 +1,6 @@
+import { url } from "inspector"
 import type { Config } from "tailwindcss"
+import { fontFamily } from "tailwindcss/defaultTheme"
 
 const config = {
   darkMode: ["class"],
@@ -75,6 +77,21 @@ const config = {
       backgroundImage: {
         body: "url(/assets/images/background.jpg)",
         hero: "url(/assets/images/hero.jpg)",
+        "arrow-small": "url(/assets/images/btn-arrow-small.png)",
+        "arrow-large": "url(/assets/images/btn-arrow-large.png)",
+        "list-icon": "url(/assets/images/bubble.png)",
+        "blur-circle": "url(/assets/images/blur-circle.png)",
+        "blur-oval": "url(/assets/images/blur-oval.png)",
+        slider: "url(/assets/images/slider.jpg)",
+        "input-box": "url(/assets/images/input.png)",
+      },
+      fontFamily: {
+        sans: ["var(--font-satoshi)", ...fontFamily.sans],
+        heading: ["var(--font-clashdisplay)", ...fontFamily.serif],
+        serif: ["var(--font-striverx)", ...fontFamily.serif],
+      },
+      backgroundSize: {
+        "100%": "100% 100%",
       },
     },
   },

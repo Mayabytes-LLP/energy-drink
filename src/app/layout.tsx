@@ -50,12 +50,12 @@ const clashdisplay = localFont({
       style: "normal",
     },
     {
-      path: "../../public/assets/fonts/clashdisplay/Fonts/ClashDisplay-Variablewoff",
+      path: "../../public/assets/fonts/clashdisplay/Fonts/ClashDisplay-Variable.woff",
       weight: "100 900",
       style: "normal",
     },
     {
-      path: "../../public/assets/fonts/clashdisplay/Fonts/ClashDisplay-Variableoff2",
+      path: "../../public/assets/fonts/clashdisplay/Fonts/ClashDisplay-Variable.woff2",
       weight: "100 900",
       style: "normal",
     },
@@ -65,6 +65,26 @@ const clashdisplay = localFont({
   style: "normal",
   preload: true,
   variable: "--font-clashdisplay",
+})
+
+const striverx = localFont({
+  src: [
+    {
+      path: "../../public/assets/fonts/striverx/Striverx.otf",
+      weight: "100 900",
+      style: "normal",
+    },
+    {
+      path: "../../public/assets/fonts/striverx/Striverx.ttf",
+      weight: "100 900",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  weight: "100 900",
+  style: "normal",
+  preload: true,
+  variable: "--font-striverx",
 })
 
 export const metadata: Metadata = {
@@ -80,7 +100,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(satoshi.className, clashdisplay.variable, "min-h-screen")}
+        className={cn(
+          satoshi.className,
+          clashdisplay.variable,
+          striverx.variable,
+          "min-h-screen"
+        )}
       >
         <ThemeProvider
           attribute="class"
