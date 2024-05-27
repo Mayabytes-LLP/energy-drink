@@ -116,10 +116,10 @@ export default function EnergyDrinks() {
                 "2xl:pl-24"
               )}
             >
-              As the owner of the Boost brand, we offer a high-quality energy
-              drink product in the versions of "Poseidon's Moringa Energy Drink
-              ORIGINAL" and "Poseidon's Moringa Energy Drink LOW SUGAR" on the
-              market.
+              As the owner of the Boost brand&rdquo; we offer a high-quality
+              energy drink product in the versions of &quot;Poseidon&#39;s
+              Moringa Energy Drink ORIGINAL&quot; and &quot;Poseidon&#39;s
+              Moringa Energy Drink LOW SUGAR&quot; on the market.
             </li>
           </ul>
         </div>
